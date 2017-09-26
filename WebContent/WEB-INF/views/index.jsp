@@ -17,7 +17,11 @@
   <link href="${ctx }/resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="${ctx }/resources/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="${ctx }/resources/css/main.css" rel="stylesheet" type="text/css" />
-  
+  <style>
+  	.row{
+  		margin-top:20px;
+  	}
+  </style>
 </head>
 <body>
 
@@ -27,8 +31,14 @@
 			<div class="col"><h3><a href="${ctx }/navbar">导航栏页面</a></h3></div>
 			<div class="col"><h3><a href="${ctx }/footer">底部栏页面</a></h3></div>
 			<div class="col"><h3><a href="${ctx }/textlist">文本列表页</a></h3></div>
+			<div class="col"><h3><a href="${ctx }/textimagelist">图片文本页</a></h3></div>
 			<div class="col"><h3><a href="${ctx }/imagecarousel">图片轮动页</a></h3></div>
+			
+		</div>
+		
+		<div class="row">
 			<div class="col"><h3><a href="${ctx }/searchbar">搜索框页面</a></h3></div>
+			<div class="col"><h3><a href="${ctx }/card">Card页面</a></h3></div>
 		</div>
   	
   </div>

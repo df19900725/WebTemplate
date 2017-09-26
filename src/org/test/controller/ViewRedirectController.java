@@ -63,4 +63,18 @@ public class ViewRedirectController {
     return mav;
   }
   
+  @RequestMapping("/card")
+  public ModelAndView card() {
+    ModelAndView mav = new ModelAndView();
+    mav.setViewName("/card");
+    return mav;
+  }
+  
+  @RequestMapping("/textimagelist")
+  public ModelAndView textimagelist() {
+    ModelAndView mav = new ModelAndView();
+    mav.setViewName("/textimagelist");
+    return mav;
+  }
+  
 }
