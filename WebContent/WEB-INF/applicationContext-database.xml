@@ -7,7 +7,7 @@
 	<!-- 数据库连接池配置 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close"> 	
 
-		<property name="url"><value>jdbc:mysql://127.0.0.1:3306/Enterprise</value></property> 
+		<property name="url"><value>jdbc:mysql://127.0.0.1:3306/WebTemplate</value></property> 
 		<property name="username"><value>root</value></property> 
 		<property name="password"><value>112233</value></property>
 		
