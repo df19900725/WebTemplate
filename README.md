@@ -1,7 +1,7 @@
 # WebTemplate
 一个基于SpringMVC、SpringSecurity和Druid框架的Web系统模板
 
-里面包含了很多的前端样式模板，即将继续更新了
+里面包含了很多的前端样式模板
 
 目前有：
 1、登录注册页
