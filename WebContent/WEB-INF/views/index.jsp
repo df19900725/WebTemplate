@@ -27,7 +27,6 @@
 
 	<div class="container" style="padding:20px">
 		<div class="row">
-			<div class="col"><h3><a href="${ctx }/signin">登录注册页</a></h3></div>
 			<div class="col"><h3><a href="${ctx }/navbar">导航栏页面</a></h3></div>
 			<div class="col"><h3><a href="${ctx }/footer">底部栏页面</a></h3></div>
 			<div class="col"><h3><a href="${ctx }/textlist">文本列表页</a></h3></div>
@@ -37,8 +36,10 @@
 		</div>
 		
 		<div class="row">
+			<div class="col"><h3><a href="${ctx }/signin">登录注册页</a></h3></div>
 			<div class="col"><h3><a href="${ctx }/searchbar">搜索框页面</a></h3></div>
 			<div class="col"><h3><a href="${ctx }/card">Card页面</a></h3></div>
+      <div class="col"><h3><a href="${ctx }/file-upload">图片剪裁上传</a></h3></div>
 		</div>
   	
   </div>

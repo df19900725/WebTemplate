@@ -30,6 +30,13 @@
   		min-width:104px;
   		text-align:center;
   	}
+  	.nav-item{
+  		font-weight: 400px;
+	    font-size: 14px/44px;
+	    color: #61616;
+	    font: 500 14px/44px Roboto,sans-serif;
+	    height: 48px;
+  	}
 
   </style>
 </head>
