@@ -22,12 +22,11 @@
 		<intercept-url pattern="/register*" access="permitAll" />
 		<intercept-url pattern="/invalidsession*" access="permitAll" />
 		<intercept-url pattern="/404*" access="none" />
+		<intercept-url pattern="/**"	access="permitAll" />
+		<intercept-url pattern="/*"	access="permitAll" />
 		
 		<form-login login-page="/signin" authentication-failure-url="/signin?login_error" default-target-url="/query"/>
 		<logout logout-success-url="/query" delete-cookies="JSESSIONID" />
-		
-		<intercept-url pattern="/admin" access="hasRole('ROLE_ADMIN')" />
-		<intercept-url pattern="/**" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')" />
 	
 		<csrf disabled="true" />
 		<access-denied-handler error-page="/403" />

@@ -56,28 +56,31 @@
     }
 
   </style>
+  <script>
+    var ctx = '${ctx }'
+  </script>
 </head>
 <body>
 
   <div class="container">
 
     <div class="row" style="height: 600px;margin:0 auto; width: 600px">
-      <div class="col-8">
+      <div id="cover_upload_handle">
         <div id="jcrop-image-div" style="margin-bottom: 10px;"><img class="img-fluid" id="preview-image-custom" src="" /></div>
-        <form enctype="multipart/form-data">
+        <form id="cover_form" enctype="multipart/form-data">
           <input id="input-id" name="file" type="file" class="file" />
         </form>
         <div id="picture"></div>
         <div id="image-cut-params" style="display: none"></div>
-      </div>
 
-      <div class="col-4">
-        <div id="preview-pane">
+        <div id="preview-pane" style="display: none">
           <div class="preview-container">
             <img src="" class="jcrop-preview" alt="Preview" />
           </div>
         </div>
       </div>
+      <div id="cover_uploaded_show"><img class="img-fluid" id="cover_uploaded" src="" /></div>
+      <button id="cover_reupload_button" onclick="reupload()" class="btn btn-primary" style="display: none; margin-top: 10px; height: 36px !important;">重新上传</button>
     </div>
   </div>
 
@@ -97,7 +100,9 @@
   <script type="text/javascript" src="${ctx }/resources/fileinput/themes/fa/theme.js"></script>
 
   <script src="${ctx}/resources/js/jquery.Jcrop.js"></script>
-  <script>
+  <script src="${ctx}/resources/js/exif.js"></script>
+  <script src="${ctx}/resources/js/image.cut.js"></script>
+  <%--<script>
 
 
     var uploadUrl = "/location/add_location_cover";
@@ -198,7 +203,7 @@
 
       imageCutParam = c    //将剪切的结果存起来
     }
-  </script>
+  </script>--%>
 </body>
 </html>
 

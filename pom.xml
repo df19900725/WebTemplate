@@ -64,6 +64,13 @@
         <artifactId>druid</artifactId>
         <version>1.0.12</version>
     </dependency>
+
+    <dependency>
+      <groupId>net.coobird</groupId>
+      <artifactId>thumbnailator</artifactId>
+      <version>[0.4, 0.5)</version>
+    </dependency>
+
     <!-- JSTL 标签支持 -->
     <dependency>
         <groupId>jstl</groupId>

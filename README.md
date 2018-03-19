@@ -1,7 +1,14 @@
 # WebTemplate
 一个基于SpringMVC、SpringSecurity和Druid框架的Web系统模板
 
-最新更新：增加了图片上传和剪裁的功能
+2018.3.19 最新更新：修复了上传iPhone拍照的照片旋转问题
+
+-------- 2018.3.18 ---------
+
+增加了图片上传和剪裁的功能
+
+---------------
+
 里面包含了很多的前端样式模板
 
 目前有：
@@ -30,7 +37,11 @@
 
 A simple web template based on Spring Security/Bootstrap/jQuery etc.
 
-Recent update:
+Recent update: bug fixed, 
+fixed incorrect photo rotation when they are taken by iOS devices 
+
+----------------2018/3/18 updates-----------------
+
 add image cut and upload
 
 Functions:

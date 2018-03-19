@@ -1,7 +1,10 @@
 package org.test.utils;
 
+import net.coobird.thumbnailator.Thumbnails;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.awt.image.CropImageFilter;
 import java.awt.image.FilteredImageSource;
@@ -37,6 +40,7 @@ public class ImageUtils {
     double realY = zoomY * scale;
     double realW = zoomW * scale;
     double realH = zoomH * scale;
+    System.out.println("file height:"+fileHeight+"\t"+realH);
     System.out.println("file width:"+fileWidth+"\t"+realW);
     if (fileWidth >= realW && fileHeight >= realH) {
       Image image = bi.getScaledInstance(fileWidth, fileHeight, Image.SCALE_DEFAULT);
@@ -57,9 +61,23 @@ public class ImageUtils {
 
   public static void main(String[] args) throws Exception {
 
-    String imagePath = "D:\\OneDrive\\Programs\\20170831\\WebTemplate\\target\\WebTemplate-0.0.1-SNAPSHOT\\resources\\files/f7a329ec-549c-4926-a8e6-33d38aa0feaa.jpg";
-//    imgCut(imagePath, 29,0,226,131,197,131);
-    imgCut(imagePath, imagePath,29,0,197,131,370,208);
+    String imagePath = "D:\\OneDrive\\Programs\\IDEA_Ultimate\\LocalGoWebXD\\target\\LocalGoWebXD-1.0-SNAPSHOT\\resources\\location\\cover\\IMG_0475.jpg";
+    String imagePathNew = "D:\\OneDrive\\Programs\\IDEA_Ultimate\\LocalGoWebXD\\target\\LocalGoWebXD-1.0-SNAPSHOT\\resources\\location\\cover\\IMG_475new.jpg";
+//    imgCut(imagePath, imagePathNew,0,0,111,308-131,412,308);
+
+    //x =y
+    //y = 308 - w - x
+    //w = h
+    //h = w
+    imgCut(imagePath, imagePathNew,73,308-197-104,131,197,412,308);
+
+    Thumbnails.of(new File(imagePathNew))
+            .size(1000,1000)
+            .rotate(90)
+            .toFile(new File(imagePathNew));
+//    imgCut(imagePath, imagePath,29,0,308,205,308,411);
+
   }
+
 
 }
